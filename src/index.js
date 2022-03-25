@@ -13,9 +13,9 @@ const app = express()
 app.use(logger.middleware)
 app.use(helmet())
 app.use(
-    cors({
-      orgin: config.origin
-    })
+  cors({
+    origin: config.origin,
+  })
 )
 
 app.use(router)
