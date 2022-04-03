@@ -25,4 +25,10 @@ if (error) {
   logger.log.error(new Error(`Config validation error: ${error.message}`))
 }
 
-export default { nodeEnv: env.NODE_ENV, port: env.PORT, origin: env.ORIGIN, apiUser: env.API_USER, apiPass: env.API_PASS }
+export default {
+  nodeEnv: env.NODE_ENV,
+  port: env.PORT,
+  origin: env.ORIGIN,
+  apiUser: env.API_USER,
+  apiPass: env.API_PASS,
+}
